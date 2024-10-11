@@ -1,0 +1,158 @@
+body {
+    font-family:sans-serif;
+    background-image:Url('Ha Long Bay.jpeg');
+    background-size: cover;
+}
+
+header {
+    background-color:navy blue;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    margin: 10px;
+    background-color:skyblue;
+}   
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    color:darkblue;
+}
+
+.carousel {
+    display: flex;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner{
+    display: flex;
+    transition: transform 2s auto;
+}
+
+.carousel-item {
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.carousel-item img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.carousel-item:hover {
+    transform: scale(2.05);
+   
+}
+
+footer {
+    text-align: bottom;
+    padding: 20px;
+    background-color: navyblue;
+    color: white;
+    position: relative;
+    bottom: 1;
+    width: 200%;
+}
+.contact-form {
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 60px;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .carousel-item, .destination {
+        width: 90px;
+}  
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.destination {
+    border: 1px solid #ccc;
+    margin: 9px;
+    width: 10%;
+    background-color: white;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+
+.destination:hover {
+    transform: scale(1.05);
+}
+
+.video {
+    margin-top: 20px;
+    text-align: left;
+}
+/* form heading */
+.contact-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 100px;
+}
+.destination-grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.logo {
+    width: 5%;
+    height: 109;
+    display: inline;
+    margin: 20px auto;  
+
+}
